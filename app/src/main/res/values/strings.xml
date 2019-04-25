@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">String Test</string>
+    <string name="my_string_1">String 1 at DEFAULT</string>
+    <string name="my_string_2">String 2 at DEFAULT</string>
+    <string name="my_string_3">String 3 at DEFAULT</string>
+    <string name="my_string_4">String 4 at DEFAULT</string>
+    <string name="language">LANGUAGE:</string>
+    <string name="country">COUNTRY:</string>
+    <string name="this_should_show_ar_string">This should show AR string:</string>
+    <string name="this_should_show_es_string">This should show ES string:</string>
+    <string name="this_should_show_next_children_of_es">This should show next children of ES:</string>
+    <string name="this_should_show_default_string">This should show actual children of ES:</string>
+    <string name="what_is_happening_first_line_gets_string_that_is_present_in_all_resource_files_second_line_gets_string_that_is_in_all_files_except_ar_third_line_gets_string_from_all_files_except_es_and_ar_fourth_line_gets_string_from_default_only">
+        What is happening: \nFirst line gets string that is present in all resource files \nSecond line gets string that is
+        in all files except AR \nThird line gets string from all files except ES and AR \nFourth line gets string of any but ES,AR or MX
+    </string>
+</resources>
