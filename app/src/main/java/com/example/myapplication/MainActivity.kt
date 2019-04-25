@@ -19,8 +19,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        language.text = resources.configuration.locale.displayLanguage
-        country.text = resources.configuration.locale.displayCountry
+        if (Build.VERSION.SDK_INT >= 24) {
+            language.text = resources.configuration.locales.get(0).displayLanguage
+            country.text = resources.configuration.locales.get(0).displayCountry
+        } else {
+            language.text = resources.configuration.locale.displayLanguage
+            country.text = resources.configuration.locale.displayCountry
+        }
     }
 
     private fun wrapContextLocale(context: Context?): Context? {
